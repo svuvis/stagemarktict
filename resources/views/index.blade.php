@@ -263,7 +263,7 @@
                                         een tweetal workshops volgen.
                                     </p>
                                 </div>
-                                <div class="section-content m-t-60-sm-min" style="margin-bottom: 60px">
+                                <div class="section-content m-t-60-sm-min">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-6">
                                             <div class="pricing-table m-t-0-xs-max">
@@ -298,8 +298,7 @@
                                             <div class="pricing-table">
                                                 <div class="pricing-table-header block-pink">
                                                     <h5 class="pricing-table-caption">Workshop II</h5>
-                                                    <h2 class="pricing-table-title" style="font-size: 30px">Solliciteren
-                                                        naar een stageplaats</h2>
+                                                    <h2 class="pricing-table-title" style="font-size: 30px">Solliciteren naar een stageplaats</h2>
                                                 </div>
                                                 <div class="pricing-table-content block-light" style="padding: 30px">
                                                     <p>Hoe kom je er achter of een stageplaats bij jou past? Door een
@@ -324,18 +323,6 @@
                                         </div>
                                     </div>
                                 </div> <!-- .section-content -->
-                                <p>Deze workshops vinden plaats tussen 10-12.00 uur op vrijdag 15 april en ze worden
-                                    verzorgd door recruiters van Brunel, InfoSupport, Procam en Rabobank. De
-                                    workshops worden in parallelle sessies aangeboden zodat je aan beide workshops
-                                    deel kunt nemen. Echter, er zijn per workshop slechts een beperkt aantal
-                                    plaatsen beschikbaar. Wil je zeker zijn van een plaats, meld je dan zo snel
-                                    mogelijk aan.
-                                </p>
-                                <p>Na aanmelding ontvang je bericht over het lokaal van de workshop en het precieze
-                                    tijdstip.
-                                </p>
-                                <p><span style="color:red">LET OP:</span> Neem naar beide workshops een print van je CV
-                                    mee.</p>
                             </div>
                         </div>
                     </div>
@@ -349,31 +336,45 @@
                             <div class="col-inner">
                                 <div class="section-heading">
                                     <h2>Inschrijven</h2>
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                                        praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
-                                        excepturi sint occaecati cupiditate non provident.</p>
+                                    <p>Deze workshops vinden plaats tussen 10-12.00 uur op vrijdag 15 april en ze worden
+                                        verzorgd door recruiters van Brunel, InfoSupport, Procam en Rabobank. De
+                                        workshops worden in parallelle sessies aangeboden zodat je aan beide workshops
+                                        deel kunt nemen. Echter, er zijn per workshop slechts een beperkt aantal
+                                        plaatsen beschikbaar. Wil je zeker zijn van een plaats, meld je dan zo snel
+                                        mogelijk aan.
+                                    </p><br />
+                                    <p>Na aanmelding ontvang je bericht over het lokaal van de workshop en het precieze
+                                        tijdstip.
+                                    </p>
+                                    <p><span style="color:red">LET OP:</span> Neem naar beide workshops een print van je CV
+                                        mee.</p>
                                 </div>
-                                <div class="section-content">
-                                        <form class="_default" id="contactForm" novalidate="novalidate" style="text-align: left">
-                                            <label class="form-label" for="contactName">Je naam</label>
-                                            <div class="form-group required">
-                                                <input class="form-control" id="contactName" type="text" name="name">
-                                            </div>
-                                            <label class="form-label" for="contactEmail">Email adres</label>
-                                            <div class="form-group required">
-
-                                                <input class="form-control" id="contactEmail" type="text" name="email">
-                                            </div>
-                                            <label class="form-label" for="contactMessage">Bericht</label>
-                                            <div class="form-group required">
-                                        <textarea class="form-control" id="contactMessage" rows="4"
-                                                  name="message"></textarea>
-                                            </div>
-                                            <div class="btn-wrap">
-                                                <button type="submit" class="btn btn-warning m-y waves-effect waves-light btn-block">Verstuur</button>
-                                            </div>
-                                            <div class="form-notify"></div>
-                                        </form> <!-- #contactForm -->
+                                <div class="section-content" style="text-align: left">
+                                    {!! Form::open(['class' => '_default']) !!}
+                                    {!! Form::label('workshop','Workshop',['class' => 'control-label']) !!}
+                                    <div class="form-group required @if($errors->has('workshop')) has-error @endif" style="padding: 0; border-radius: 3px; -webkit-border-radius: 3px">
+                                        {!! Form::select('workshop', ['workshop1' => 'Pitchen en netwerken', 'workshop2' => 'Solliciteren naar een stageplaats'], null, ['class' => 'form-control', 'value' => old('workshop')]) !!}
+                                        @if ($errors->has('workshop')) <p class="help-block">{{ $errors->first('workshop') }}</p> @endif
+                                    </div>
+                                    {!! Form::label('name','Je naam',['class' => 'control-label']) !!}
+                                    <div class="form-group required @if($errors->has('name')) has-error @endif">
+                                        {!! Form::text('name', null, ['class' => 'form-control', 'value' => old('name')]) !!}
+                                        @if ($errors->has('name')) <p class="help-block">{{ $errors->first('name') }}</p> @endif
+                                    </div>
+                                    {!! Form::label('email','Email adres',['class' => 'control-label']) !!}
+                                    <div class="form-group required @if($errors->has('email')) has-error @endif">
+                                        {!! Form::email('email', null, ['class' => 'form-control', 'value' => old('email')]) !!}
+                                        @if ($errors->has('email')) <p class="help-block">{{ $errors->first('email') }}</p> @endif
+                                    </div>
+                                    {!! Form::label('studentnumber','Studentnummer',['class' => 'control-label']) !!}
+                                    <div class="form-group required @if($errors->has('vakgebied')) has-error @endif">
+                                        {!! Form::text('studentnumber', null, ['class' => 'form-control', 'value' => old('studentnumber')]) !!}
+                                        @if ($errors->has('studentnumber')) <p class="help-block">{{ $errors->first('vakgebied') }}</p> @endif
+                                    </div>
+                                    <div class="btn-wrap">
+                                        <button type="submit" class="btn btn-warning m-y waves-effect waves-light btn-block">Schrijf je in</button>
+                                    </div>
+                                    {!! Form::close() !!}
                                 </div> <!-- .section-content -->
                             </div>
                         </div>
