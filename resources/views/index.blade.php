@@ -298,7 +298,8 @@
                                             <div class="pricing-table">
                                                 <div class="pricing-table-header block-pink">
                                                     <h5 class="pricing-table-caption">Workshop II</h5>
-                                                    <h2 class="pricing-table-title" style="font-size: 30px">Solliciteren naar een stageplaats</h2>
+                                                    <h2 class="pricing-table-title" style="font-size: 30px">Solliciteren
+                                                        naar een stageplaats</h2>
                                                 </div>
                                                 <div class="pricing-table-content block-light" style="padding: 30px">
                                                     <p>Hoe kom je er achter of een stageplaats bij jou past? Door een
@@ -336,46 +337,74 @@
                             <div class="col-inner">
                                 <div class="section-heading">
                                     <h2>Inschrijven</h2>
+                                    @if(Session::has('inschrijvingStatus'))
+                                        <div class="alert alert-success">
+                                            <h2 style="margin-bottom: 0">{{ Session::get('inschrijvingStatus') }}</h2>
+                                        </div>
+                                    @endif
+
                                     <p>Deze workshops vinden plaats tussen 10-12.00 uur op vrijdag 15 april en ze worden
                                         verzorgd door recruiters van Brunel, InfoSupport, Procam en Rabobank. De
                                         workshops worden in parallelle sessies aangeboden zodat je aan beide workshops
                                         deel kunt nemen. Echter, er zijn per workshop slechts een beperkt aantal
                                         plaatsen beschikbaar. Wil je zeker zijn van een plaats, meld je dan zo snel
                                         mogelijk aan.
-                                    </p><br />
+                                    </p><br/>
                                     <p>Na aanmelding ontvang je bericht over het lokaal van de workshop en het precieze
                                         tijdstip.
                                     </p>
-                                    <p><span style="color:red">LET OP:</span> Neem naar beide workshops een print van je CV
+                                    <p><span style="color:red">LET OP:</span> Neem naar beide workshops een print van je
+                                        CV
                                         mee.</p>
                                 </div>
-                                <div class="section-content" style="text-align: left">
-                                    {!! Form::open(['class' => '_default']) !!}
-                                    {!! Form::label('workshop','Workshop',['class' => 'control-label']) !!}
-                                    <div class="form-group required @if($errors->has('workshop')) has-error @endif" style="padding: 0; border-radius: 3px; -webkit-border-radius: 3px">
-                                        {!! Form::select('workshop', ['workshop1' => 'Pitchen en netwerken', 'workshop2' => 'Solliciteren naar een stageplaats'], null, ['class' => 'form-control', 'value' => old('workshop')]) !!}
-                                        @if ($errors->has('workshop')) <p class="help-block">{{ $errors->first('workshop') }}</p> @endif
-                                    </div>
-                                    {!! Form::label('name','Je naam',['class' => 'control-label']) !!}
-                                    <div class="form-group required @if($errors->has('name')) has-error @endif">
-                                        {!! Form::text('name', null, ['class' => 'form-control', 'value' => old('name')]) !!}
-                                        @if ($errors->has('name')) <p class="help-block">{{ $errors->first('name') }}</p> @endif
-                                    </div>
-                                    {!! Form::label('email','Email adres',['class' => 'control-label']) !!}
-                                    <div class="form-group required @if($errors->has('email')) has-error @endif">
-                                        {!! Form::email('email', null, ['class' => 'form-control', 'value' => old('email')]) !!}
-                                        @if ($errors->has('email')) <p class="help-block">{{ $errors->first('email') }}</p> @endif
-                                    </div>
-                                    {!! Form::label('studentnumber','Studentnummer',['class' => 'control-label']) !!}
-                                    <div class="form-group required @if($errors->has('vakgebied')) has-error @endif">
-                                        {!! Form::text('studentnumber', null, ['class' => 'form-control', 'value' => old('studentnumber')]) !!}
-                                        @if ($errors->has('studentnumber')) <p class="help-block">{{ $errors->first('vakgebied') }}</p> @endif
-                                    </div>
-                                    <div class="btn-wrap">
-                                        <button type="submit" class="btn btn-warning m-y waves-effect waves-light btn-block">Schrijf je in</button>
-                                    </div>
+
+                                @if(count($workshops) != 0)
+                                    <div class="section-content" style="text-align: left">
+                                        {!! Form::open(['class' => '_default', 'route' => 'inschrijven']) !!}
+                                        {!! Form::label('workshop','Workshop',['class' => 'control-label']) !!}
+                                        <div class="form-group required"
+                                             style="padding: 0; border-radius: 3px; -webkit-border-radius: 3px">
+                                            {!! Form::select('workshop', $workshops, null, ['class' => 'form-control', 'value' => old('workshop')]) !!}
+                                            @if ($errors->has('workshop')) <p
+                                                    class="help-block"
+                                                    style="color: #a94442">{{ $errors->first('workshop') }}</p> @endif
+                                        </div>
+                                        {!! Form::label('name','Je naam',['class' => 'control-label']) !!}
+                                        <div class="form-group required">
+                                            {!! Form::text('name', null, ['class' => 'form-control', 'value' => old('name')]) !!}
+                                            @if ($errors->has('name')) <p
+                                                    class="help-block"
+                                                    style="color: #a94442">{{ $errors->first('name') }}</p> @endif
+                                        </div>
+                                        {!! Form::label('email','Email adres',['class' => 'control-label']) !!}
+                                        <div class="form-group required">
+                                            {!! Form::email('email', null, ['class' => 'form-control', 'value' => old('email')]) !!}
+                                            @if ($errors->has('email')) <p
+                                                    class="help-block"
+                                                    style="color: #a94442">{{ $errors->first('email') }}</p> @endif
+                                        </div>
+                                        {!! Form::label('studentnummer','Studentnummer',['class' => 'control-label']) !!}
+                                        <div class="form-group required">
+                                            {!! Form::text('studentnummer', null, ['class' => 'form-control', 'value' => old('studentnummer')]) !!}
+                                            @if ($errors->has('studentnummer')) <p
+                                                    class="help-block"
+                                                    style="color: #a94442">{{ $errors->first('studentnummer') }}</p> @endif
+                                        </div>
+                                        <div class="btn-wrap">
+                                            <button type="submit"
+                                                    class="btn btn-warning m-y waves-effect waves-light btn-block">
+                                                Schrijf
+                                                je in
+                                            </button>
+                                        </div>
+                                    </div> <!-- .section-content -->
                                     {!! Form::close() !!}
-                                </div> <!-- .section-content -->
+                                @else
+                                    <div class="section-content">
+                                        <p>Alle workshops zitten vol, probeer het later nog eens misschien schrijft
+                                            iemand zich wel uit</p>
+                                    </div> <!-- .section-content -->
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -467,7 +496,8 @@
                     <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
                     <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
                 </ul>
-                <p class="site-footer-copyright">2016 © <a href="http://uvis.nl" target="_blank">studievereniging UVIS</a> | alle rechten voorbehouden</p>
+                <p class="site-footer-copyright">2016 © <a href="http://uvis.nl" target="_blank">studievereniging
+                        UVIS</a> | alle rechten voorbehouden</p>
             </div>
         </footer> <!-- .site-footer -->
     </div>

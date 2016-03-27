@@ -17,7 +17,7 @@ class CreateInschrijvingenTable extends Migration
             $table->integer('workshop')->unsigned()->nullable();
             $table->foreign('workshop')->references('id')->on('workshops')->onDelete('cascade');
             $table->string('name');
-            $table->string('email')->unique();
+            $table->string('email');
             $table->integer('studentnummer');
             $table->timestamps();
         });
