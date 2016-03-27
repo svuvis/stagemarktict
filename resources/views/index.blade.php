@@ -85,7 +85,7 @@
                                 </div> <!-- .section-heading -->
                                 <div class="section-content">
                                     <a class="btn btn-pink m-y-5" href="#about">Leer meer</a>
-                                    <a class="btn btn-warning m-y-5" href="#download">Workshops</a>
+                                    <a class="btn btn-warning m-y-5" href="#pricing">Workshops</a>
                                 </div> <!-- .section-content -->
                             </div>
                         </div>
@@ -364,28 +364,28 @@
                                         {!! Form::label('workshop','Workshop',['class' => 'control-label']) !!}
                                         <div class="form-group required"
                                              style="padding: 0; border-radius: 3px; -webkit-border-radius: 3px">
-                                            {!! Form::select('workshop', $workshops, null, ['class' => 'form-control', 'value' => old('workshop')]) !!}
+                                            {!! Form::select('workshop', $workshops, null, ['class' => 'form-control', 'value' => old('workshop'), 'required' => '']) !!}
                                             @if ($errors->has('workshop')) <p
                                                     class="help-block"
                                                     style="color: #a94442">{{ $errors->first('workshop') }}</p> @endif
                                         </div>
                                         {!! Form::label('name','Je naam',['class' => 'control-label']) !!}
                                         <div class="form-group required">
-                                            {!! Form::text('name', null, ['class' => 'form-control', 'value' => old('name')]) !!}
+                                            {!! Form::text('name', null, ['class' => 'form-control', 'value' => old('name'), 'required' => '']) !!}
                                             @if ($errors->has('name')) <p
                                                     class="help-block"
                                                     style="color: #a94442">{{ $errors->first('name') }}</p> @endif
                                         </div>
                                         {!! Form::label('email','Email adres',['class' => 'control-label']) !!}
                                         <div class="form-group required">
-                                            {!! Form::email('email', null, ['class' => 'form-control', 'value' => old('email')]) !!}
+                                            {!! Form::email('email', null, ['class' => 'form-control', 'value' => old('email'), 'required' => '']) !!}
                                             @if ($errors->has('email')) <p
                                                     class="help-block"
                                                     style="color: #a94442">{{ $errors->first('email') }}</p> @endif
                                         </div>
                                         {!! Form::label('studentnummer','Studentnummer',['class' => 'control-label']) !!}
                                         <div class="form-group required">
-                                            {!! Form::text('studentnummer', null, ['class' => 'form-control', 'value' => old('studentnummer')]) !!}
+                                            {!! Form::number('studentnummer', null, ['class' => 'form-control', 'value' => old('studentnummer'), 'required' => '']) !!}
                                             @if ($errors->has('studentnummer')) <p
                                                     class="help-block"
                                                     style="color: #a94442">{{ $errors->first('studentnummer') }}</p> @endif
@@ -420,7 +420,7 @@
                             cupiditate non provident.</p>
                     </div>
                     <div class="row section-content m-t-60-sm-min">
-                        <div class="col-sm-6 col-md-5">
+                        <div class="col-sm-6 col-md-4">
                             <div class="col-inner">
                                 <div class="icon-box _left">
                                     <div class="icon-box-media">
@@ -430,7 +430,7 @@
                                         <h4>Telefoon nummer</h4>
                                     </div>
                                     <div class="icon-box-content font-sub font-italic">
-                                        <span>(06) 12345678</span>
+                                        <span>(06) 241 811 17</span>
                                     </div>
                                 </div>
 
@@ -442,7 +442,7 @@
                                         <h4>Email Adres</h4>
                                     </div>
                                     <div class="icon-box-content font-sub font-italic">
-                                        <span>example@example.com</span>
+                                        <span>mariecke.schipper@hu.nl</span>
                                     </div>
                                 </div>
 
@@ -461,30 +461,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-offset-1 m-t-60-xs-max">
-                            <div class="col-inner">
-                                <form class="_default" id="contactForm" novalidate="novalidate">
-                                    <label class="form-label" for="contactName">Je naam</label>
-                                    <div class="form-group required">
-                                        <input class="form-control" id="contactName" type="text" name="name">
-                                    </div>
-                                    <label class="form-label" for="contactEmail">Email adres</label>
-                                    <div class="form-group required">
-
-                                        <input class="form-control" id="contactEmail" type="text" name="email">
-                                    </div>
-                                    <label class="form-label" for="contactMessage">Bericht</label>
-                                    <div class="form-group required">
-                                        <textarea class="form-control" id="contactMessage" rows="4"
-                                                  name="message"></textarea>
-                                    </div>
-                                    <div class="btn-wrap">
-                                        <button type="submit" class="btn btn-primary btn-block">Verstuur</button>
-                                    </div>
-                                    <div class="form-notify"></div>
-                                </form> <!-- #contactForm -->
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div> <!-- #contact -->
@@ -493,8 +469,8 @@
             <div class="container">
                 <img class="site-footer-logo img-responsive" src="img/site-footer-logo.png" data-sr="bottom">
                 <ul class="site-footer-social-list">
-                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-                    <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                    <li><a href="#" target="_blank">Facebook</a></li>
+                    <li><a href="#" target="_blank">Twitter</a></li>
                 </ul>
                 <p class="site-footer-copyright">2016 © <a href="http://uvis.nl" target="_blank">studievereniging
                         UVIS</a> | alle rechten voorbehouden</p>
