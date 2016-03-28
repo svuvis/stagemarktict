@@ -415,9 +415,8 @@
                 <div class="container">
                     <div class="section-heading text-center">
                         <h2>Neem contact met ons op</h2>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-                            cupiditate non provident.</p>
+                        <p>Heb je nog vragen of opmerking, of wil je meer informatie over de stagemarkt, neem dan gerust
+                            contact op via de onderstaande mail.</p>
                     </div>
                     <div class="row section-content m-t-60-sm-min">
                         <div class="col-sm-6 col-md-4">
