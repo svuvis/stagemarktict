@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if IE 9 ]>
 <html class="ie ie9 no-js" lang="en"><![endif]-->
@@ -45,7 +46,7 @@
                             <a class="navbar-brand" href="#">
                                 <img src="img/site-footer-logo.png" alt="" style="float: left">
                                 <h1 style="color: white; float: left; font-size: 25px; margin-bottom: 0; margin-left: 10px">
-                                    Stagemarkt ICT</h1>
+                                    HU Stagemarkt ICT</h1>
                             </a>
                         </div>
                     </div> <!-- .navbar-header -->
@@ -53,7 +54,7 @@
                     <div class="collapse navbar-collapse" id="navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="active"><a href="#home">Home</a></li>
-                            <li><a href="#about">Iets</a></li>
+                            <li><a href="#about">Info</a></li>
                             <li><a href="#brief_1">Over</a></li>
                             <li><a href="#pricing">Workshops</a></li>
                             <li><a href="#download">Inschrijven</a></li>
@@ -112,8 +113,8 @@
                                         <h3>Hoe, Wie, Wat, Waar?</h3>
                                     </div>
                                     <div class="icon-box-content">
-                                        <p>Op vrijdag 15 april vindt de eerste ICT-stagemarkt plaats op het
-                                            Instituutsplein C002. Op deze markt presenteren zo’n dertig bedrijven zich
+                                        <p>Op vrijdag 15 april 12:00 tot 16:00 vindt de eerste ICT-stagemarkt plaats op het
+                                            Instituutsplein C02. Op deze markt presenteren zo’n dertig bedrijven zich
                                             mét stageopdrachten.
                                         </p>
                                     </div>

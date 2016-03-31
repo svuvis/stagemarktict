@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.2.26 on 2016-03-27.
+ * Generated for Laravel 5.2.27 on 2016-03-31.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -2496,47 +2496,6 @@ namespace {
     }
 
 
-    class Crypt extends \Illuminate\Support\Facades\Crypt{
-        
-        /**
-         * Determine if the given key and cipher combination is valid.
-         *
-         * @param string $key
-         * @param string $cipher
-         * @return bool 
-         * @static 
-         */
-        public static function supported($key, $cipher){
-            return \Illuminate\Encryption\Encrypter::supported($key, $cipher);
-        }
-        
-        /**
-         * Encrypt the given value.
-         *
-         * @param string $value
-         * @return string 
-         * @throws \Illuminate\Contracts\Encryption\EncryptException
-         * @static 
-         */
-        public static function encrypt($value){
-            return \Illuminate\Encryption\Encrypter::encrypt($value);
-        }
-        
-        /**
-         * Decrypt the given value.
-         *
-         * @param string $payload
-         * @return string 
-         * @throws \Illuminate\Contracts\Encryption\DecryptException
-         * @static 
-         */
-        public static function decrypt($payload){
-            return \Illuminate\Encryption\Encrypter::decrypt($payload);
-        }
-        
-    }
-
-
     class DB extends \Illuminate\Support\Facades\DB{
         
         /**
@@ -3530,6 +3489,19 @@ namespace {
         }
         
         /**
+         * Chunk the results of a query by comparing numeric IDs.
+         *
+         * @param int $count
+         * @param callable $callback
+         * @param string $column
+         * @return bool 
+         * @static 
+         */
+        public static function chunkById($count, $callback, $column = 'id'){
+            return \Illuminate\Database\Eloquent\Builder::chunkById($count, $callback, $column);
+        }
+        
+        /**
          * Execute a callback over each item while chunking.
          *
          * @param callable $callback
@@ -3994,6 +3966,18 @@ namespace {
          */
         public static function rightJoinWhere($table, $one, $operator, $two){
             return \Illuminate\Database\Query\Builder::rightJoinWhere($table, $one, $operator, $two);
+        }
+        
+        /**
+         * Apply the callback's query changes if the given "value" is true.
+         *
+         * @param bool $value
+         * @param \Closure $callback
+         * @return \Illuminate\Database\Query\Builder 
+         * @static 
+         */
+        public static function when($value, $callback){
+            return \Illuminate\Database\Query\Builder::when($value, $callback);
         }
         
         /**
@@ -4509,6 +4493,19 @@ namespace {
          */
         public static function forPage($page, $perPage = 15){
             return \Illuminate\Database\Query\Builder::forPage($page, $perPage);
+        }
+        
+        /**
+         * Constrain the query to the next "page" of results after a given ID.
+         *
+         * @param int $perPage
+         * @param int $lastId
+         * @param string $column
+         * @return \Illuminate\Database\Query\Builder|static 
+         * @static 
+         */
+        public static function forPageAfterId($perPage = 15, $lastId = 0, $column = 'id'){
+            return \Illuminate\Database\Query\Builder::forPageAfterId($perPage, $lastId, $column);
         }
         
         /**
@@ -6452,125 +6449,6 @@ namespace {
          */
         public static function isDownForMaintenance(){
             return \Illuminate\Queue\QueueManager::isDownForMaintenance();
-        }
-        
-        /**
-         * Push a new job onto the queue.
-         *
-         * @param string $job
-         * @param mixed $data
-         * @param string $queue
-         * @return mixed 
-         * @throws \Exception|\Throwable
-         * @static 
-         */
-        public static function push($job, $data = '', $queue = null){
-            return \Illuminate\Queue\SyncQueue::push($job, $data, $queue);
-        }
-        
-        /**
-         * Push a raw payload onto the queue.
-         *
-         * @param string $payload
-         * @param string $queue
-         * @param array $options
-         * @return mixed 
-         * @static 
-         */
-        public static function pushRaw($payload, $queue = null, $options = array()){
-            return \Illuminate\Queue\SyncQueue::pushRaw($payload, $queue, $options);
-        }
-        
-        /**
-         * Push a new job onto the queue after a delay.
-         *
-         * @param \DateTime|int $delay
-         * @param string $job
-         * @param mixed $data
-         * @param string $queue
-         * @return mixed 
-         * @static 
-         */
-        public static function later($delay, $job, $data = '', $queue = null){
-            return \Illuminate\Queue\SyncQueue::later($delay, $job, $data, $queue);
-        }
-        
-        /**
-         * Pop the next job off of the queue.
-         *
-         * @param string $queue
-         * @return \Illuminate\Contracts\Queue\Job|null 
-         * @static 
-         */
-        public static function pop($queue = null){
-            return \Illuminate\Queue\SyncQueue::pop($queue);
-        }
-        
-        /**
-         * Push a new job onto the queue.
-         *
-         * @param string $queue
-         * @param string $job
-         * @param mixed $data
-         * @return mixed 
-         * @static 
-         */
-        public static function pushOn($queue, $job, $data = ''){
-            //Method inherited from \Illuminate\Queue\Queue            
-            return \Illuminate\Queue\SyncQueue::pushOn($queue, $job, $data);
-        }
-        
-        /**
-         * Push a new job onto the queue after a delay.
-         *
-         * @param string $queue
-         * @param \DateTime|int $delay
-         * @param string $job
-         * @param mixed $data
-         * @return mixed 
-         * @static 
-         */
-        public static function laterOn($queue, $delay, $job, $data = ''){
-            //Method inherited from \Illuminate\Queue\Queue            
-            return \Illuminate\Queue\SyncQueue::laterOn($queue, $delay, $job, $data);
-        }
-        
-        /**
-         * Push an array of jobs onto the queue.
-         *
-         * @param array $jobs
-         * @param mixed $data
-         * @param string $queue
-         * @return mixed 
-         * @static 
-         */
-        public static function bulk($jobs, $data = '', $queue = null){
-            //Method inherited from \Illuminate\Queue\Queue            
-            return \Illuminate\Queue\SyncQueue::bulk($jobs, $data, $queue);
-        }
-        
-        /**
-         * Set the IoC container instance.
-         *
-         * @param \Illuminate\Container\Container $container
-         * @return void 
-         * @static 
-         */
-        public static function setContainer($container){
-            //Method inherited from \Illuminate\Queue\Queue            
-            \Illuminate\Queue\SyncQueue::setContainer($container);
-        }
-        
-        /**
-         * Set the encrypter instance.
-         *
-         * @param \Illuminate\Contracts\Encryption\Encrypter $crypt
-         * @return void 
-         * @static 
-         */
-        public static function setEncrypter($crypt){
-            //Method inherited from \Illuminate\Queue\Queue            
-            \Illuminate\Queue\SyncQueue::setEncrypter($crypt);
         }
         
     }
@@ -10538,6 +10416,41 @@ namespace {
          */
         public static function yieldContent($section, $default = ''){
             return \Illuminate\View\Factory::yieldContent($section, $default);
+        }
+        
+        /**
+         * Start injecting content into a push section.
+         *
+         * @param string $section
+         * @param string $content
+         * @return void 
+         * @static 
+         */
+        public static function startPush($section, $content = ''){
+            \Illuminate\View\Factory::startPush($section, $content);
+        }
+        
+        /**
+         * Stop injecting content into a push section.
+         *
+         * @return string 
+         * @throws \InvalidArgumentException
+         * @static 
+         */
+        public static function stopPush(){
+            return \Illuminate\View\Factory::stopPush();
+        }
+        
+        /**
+         * Get the string contents of a push section.
+         *
+         * @param string $section
+         * @param string $default
+         * @return string 
+         * @static 
+         */
+        public static function yieldPushContent($section, $default = ''){
+            return \Illuminate\View\Factory::yieldPushContent($section, $default);
         }
         
         /**
