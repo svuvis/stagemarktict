@@ -113,7 +113,7 @@
                                         <h3>Hoe, Wie, Wat, Waar?</h3>
                                     </div>
                                     <div class="icon-box-content">
-                                        <p>Op vrijdag 15 april 12:00 tot 16:00 vindt de eerste ICT-stagemarkt plaats op het
+                                        <p>Op vrijdag 15 april 13:00 tot 16:00 vindt de eerste ICT-stagemarkt plaats op het
                                             Instituutsplein C02. Op deze markt presenteren zo’n dertig bedrijven zich
                                             mét stageopdrachten.
                                         </p>
