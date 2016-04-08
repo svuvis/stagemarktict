@@ -420,7 +420,7 @@
                             workshops, neem dan gerust contact op via de onderstaande mail..</p>
                     </div>
                     <div class="row section-content m-t-60-sm-min">
-                        <div class="col-sm-6 col-md-4">
+                        <div class="col-xs-7 col-sm-5 col-md-3 center-block" style="float: none">
                             <div class="col-inner">
                                 <div class="icon-box _left">
                                     <div class="icon-box-media">
@@ -464,12 +464,39 @@
                     </div>
                 </div>
             </div> <!-- #contact -->
+
+            <div id="logos" class="section block-pink align-c">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="col-inner">
+                                <div class="section-heading">
+                                    <h2>Bedrijven</h2>
+                                </div>
+                                <div class="section-content m-t-60-sm-min">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                                            <img class="img-responsive float-r-sm-min m-x-auto-xs-max" src="img/item/Logos1.png"
+                                                 alt="" data-sr="right">
+                                        </div>
+{{--                                        <div class="col-xs-12 col-sm-6">
+                                            <img class="img-responsive float-r-sm-min m-x-auto-xs-max" src="img/item/Logos1.png"
+                                                 alt="" data-sr="right">
+                                        </div>--}}
+                                    </div>
+                                </div> <!-- .section-content -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </main> <!-- .site-main -->
         <footer class="site-footer block-invert">
             <div class="container">
                 <img class="site-footer-logo img-responsive" src="img/site-footer-logo.png" data-sr="bottom">
                 <ul class="site-footer-social-list">
-                    <li><a href="#" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.facebook.com/events/1587905731527057/" target="_blank">Facebook</a></li>
                     <li><a href="#" target="_blank">Twitter</a></li>
                 </ul>
                 <p class="site-footer-copyright">2016 © <a href="http://uvis.nl" target="_blank">studievereniging
