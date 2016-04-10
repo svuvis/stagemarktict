@@ -193,34 +193,7 @@
                 </div>
             </div> <!-- #brief_1 -->
 
-            <div id="brief_2" class="section block-warning align-c-xs-max">
-                <div class="container">
-                    <div class="row row-table">
-                        <div class="col-sm-6 m-b-60-xs-max p-r-60-md-min">
-                            <div class="col-inner clearfix">
-                                <img class="img-responsive float-l-sm-min m-x-auto-xs-max" src="img/item/brief-2.png"
-                                     alt="" data-sr="left">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="col-inner">
-                                <div class="section-heading">
-                                    <h2>De CV-check</h2>
-                                </div> <!-- .section-heading -->
-                                <div class="section-content">
-                                    <p>Ook kun je een CV-check laten doen. Op de markt zijn verschillende recruiters
-                                        beschikbaar om jouw CV na te kijken en tips te geven over aanvullingen op of
-                                        aanpassingen van je CV. Zorg er in elk geval voor dat je een printversie van je
-                                        CV bij je hebt; dat bespreekt makkelijker dan via de laptop. Als je vervolgens
-                                        de feedback direct verwerkt, kun je nog dezelfde middag jou bijgewerkte CV aan
-                                        de bedrijven afgeven.
-                                    </p>
-                                </div> <!-- .section-content -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- #brief_2 -->
+
 
             <div id="brief_3" class="section block-success align-c-xs-max">
                 <div class="container">
@@ -249,6 +222,58 @@
                     </div>
                 </div>
             </div> <!-- #brief_3 -->
+
+            <div id="logos" class="section block-default align-c">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="col-inner">
+                                <div class="section-content m-t-60-sm-min">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <img class="img-responsive float-r-sm-min m-x-auto-xs-max" src="img/item/Logos1.png"
+                                                 alt="" data-sr="right">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <img class="img-responsive float-r-sm-min m-x-auto-xs-max" src="img/item/Logos2.png"
+                                                 alt="" data-sr="right">
+                                        </div>
+                                    </div>
+                                </div> <!-- .section-content -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="brief_2" class="section block-warning align-c-xs-max">
+                <div class="container">
+                    <div class="row row-table">
+                        <div class="col-sm-6 m-b-60-xs-max p-r-60-md-min">
+                            <div class="col-inner clearfix">
+                                <img class="img-responsive float-l-sm-min m-x-auto-xs-max" src="img/item/brief-2.png"
+                                     alt="" data-sr="left">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="col-inner">
+                                <div class="section-heading">
+                                    <h2>De CV-check</h2>
+                                </div> <!-- .section-heading -->
+                                <div class="section-content">
+                                    <p>Ook kun je een CV-check laten doen. Op de markt zijn verschillende recruiters
+                                        beschikbaar om jouw CV na te kijken en tips te geven over aanvullingen op of
+                                        aanpassingen van je CV. Zorg er in elk geval voor dat je een printversie van je
+                                        CV bij je hebt; dat bespreekt makkelijker dan via de laptop. Als je vervolgens
+                                        de feedback direct verwerkt, kun je nog dezelfde middag jou bijgewerkte CV aan
+                                        de bedrijven afgeven.
+                                    </p>
+                                </div> <!-- .section-content -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- #brief_2 -->
 
             <div id="pricing" class="section block-light align-c">
                 <div class="container">
@@ -464,32 +489,6 @@
                     </div>
                 </div>
             </div> <!-- #contact -->
-
-            <div id="logos" class="section block-pink align-c">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="col-inner">
-                                <div class="section-heading">
-                                    <h2>Bedrijven</h2>
-                                </div>
-                                <div class="section-content m-t-60-sm-min">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-                                            <img class="img-responsive float-r-sm-min m-x-auto-xs-max" src="img/item/Logos1.png"
-                                                 alt="" data-sr="right">
-                                        </div>
-{{--                                        <div class="col-xs-12 col-sm-6">
-                                            <img class="img-responsive float-r-sm-min m-x-auto-xs-max" src="img/item/Logos1.png"
-                                                 alt="" data-sr="right">
-                                        </div>--}}
-                                    </div>
-                                </div> <!-- .section-content -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
         </main> <!-- .site-main -->
         <footer class="site-footer block-invert">
