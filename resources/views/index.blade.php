@@ -185,7 +185,7 @@
                         </div>
                         <div class="col-sm-6 m-t-60-xs-max p-l-60-md-min">
                             <div class="col-inner clearfix">
-                                <img class="img-responsive float-r-sm-min m-x-auto-xs-max" src="img/item/brief-1.png"
+                                <img class="img-responsive float-r-sm-min m-x-auto-xs-max" src="img/item/brief-4.png"
                                      alt="" data-sr="right">
                             </div>
                         </div>
@@ -231,11 +231,11 @@
                                 <div class="section-content m-t-60-sm-min">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-6">
-                                            <img class="img-responsive float-r-sm-min m-x-auto-xs-max" src="img/item/Logos1.png"
+                                            <img class="img-responsive float-r-sm-min m-x-auto-xs-max" src="img/item/Logos3.png"
                                                  alt="" data-sr="right">
                                         </div>
                                         <div class="col-xs-12 col-sm-6">
-                                            <img class="img-responsive float-r-sm-min m-x-auto-xs-max" src="img/item/Logos2.png"
+                                            <img class="img-responsive float-r-sm-min m-x-auto-xs-max" src="img/item/Logos4.png"
                                                  alt="" data-sr="right">
                                         </div>
                                     </div>
