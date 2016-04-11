@@ -496,7 +496,7 @@
                 <img class="site-footer-logo img-responsive" src="img/site-footer-logo.png" data-sr="bottom">
                 <ul class="site-footer-social-list">
                     <li><a href="https://www.facebook.com/events/1587905731527057/" target="_blank">Facebook</a></li>
-                    <li><a href="#" target="_blank">Twitter</a></li>
+                    <li><a href="https://twitter.com/StagemarktICT" target="_blank">Twitter</a></li>
                 </ul>
                 <p class="site-footer-copyright">2016 © <a href="http://uvis.nl" target="_blank">studievereniging
                         UVIS</a> | alle rechten voorbehouden</p>
