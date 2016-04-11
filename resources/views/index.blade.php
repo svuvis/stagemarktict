@@ -228,7 +228,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="col-inner">
-                                <div class="section-content m-t-60-sm-min">
+                                <div class="section-content m-t-60-sm-min" style="margin-top: 0">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-6">
                                             <img class="img-responsive float-r-sm-min m-x-auto-xs-max" src="img/item/Logos3.png"
