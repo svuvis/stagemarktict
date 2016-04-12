@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if IE 9 ]>
 <html class="ie ie9 no-js" lang="en"><![endif]-->
@@ -92,7 +91,7 @@
                         </div>
                         <div class="col-sm-6 col-md-p-l-1 m-t-60-xs-max">
                             <div class="col-inner clearfix">
-                                <img class="img-responsive float-r-sm-min m-x-auto-xs-max" src="img/item/home.png"
+                                <img class="img-responsive float-r-sm-min m-x-auto-xs-max" src="img/item/GezochtStagair.png"
                                      alt="" data-sr="right">
                             </div>
                         </div>
@@ -113,7 +112,8 @@
                                         <h3>Hoe, Wie, Wat, Waar?</h3>
                                     </div>
                                     <div class="icon-box-content">
-                                        <p>Op vrijdag 15 april 13:00 tot 16:00 vindt de eerste ICT-stagemarkt plaats op het
+                                        <p>Op vrijdag 15 april 13:00 tot 16:00 vindt de eerste ICT-stagemarkt plaats op
+                                            het
                                             Instituutsplein C02. Op deze markt presenteren zo’n dertig bedrijven zich
                                             mét stageopdrachten.
                                         </p>
@@ -194,7 +194,6 @@
             </div> <!-- #brief_1 -->
 
 
-
             <div id="brief_3" class="section block-success align-c-xs-max">
                 <div class="container">
                     <div class="row row-table">
@@ -231,11 +230,25 @@
                                 <div class="section-content m-t-60-sm-min">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-6">
-                                            <img class="img-responsive float-r-sm-min m-x-auto-xs-max" src="img/item/Logos3.png"
+                                            <img class="img-responsive float-r-sm-min m-x-auto-xs-max"
+                                                 src="img/item/Logos3.png"
                                                  alt="" data-sr="right">
                                         </div>
                                         <div class="col-xs-12 col-sm-6">
-                                            <img class="img-responsive float-r-sm-min m-x-auto-xs-max" src="img/item/Logos4.png"
+                                            <img class="img-responsive float-r-sm-min m-x-auto-xs-max"
+                                                 src="img/item/Logos4.png"
+                                                 alt="" data-sr="right">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <img class="img-responsive float-r-sm-min m-x-auto-xs-max"
+                                                 src="img/item/Logos5.png"
+                                                 alt="" data-sr="right">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <img class="img-responsive float-r-sm-min m-x-auto-xs-max"
+                                                 src="img/item/Logos6.png"
                                                  alt="" data-sr="right">
                                         </div>
                                     </div>
