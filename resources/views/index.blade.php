@@ -227,7 +227,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="col-inner">
-                                <div class="section-content m-t-60-sm-min">
+                                <div class="section-content m-t-60-sm-min" style="margin-top: 0 !important">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-6">
                                             <img class="img-responsive float-r-sm-min m-x-auto-xs-max"
@@ -509,7 +509,7 @@
                 <img class="site-footer-logo img-responsive" src="img/site-footer-logo.png" data-sr="bottom">
                 <ul class="site-footer-social-list">
                     <li><a href="https://www.facebook.com/events/1587905731527057/" target="_blank">Facebook</a></li>
-                    <li><a href="#" target="_blank">Twitter</a></li>
+                    <li><a href="https://twitter.com/StagemarktICT" target="_blank">Twitter</a></li>
                 </ul>
                 <p class="site-footer-copyright">2016 © <a href="http://uvis.nl" target="_blank">studievereniging
                         UVIS</a> | alle rechten voorbehouden</p>
