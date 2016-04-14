@@ -396,7 +396,7 @@
                                         CV
                                         mee.</p>
                                 </div>
-
+<!--
                                 @if(count($workshops) != 0)
                                     <div class="section-content" style="text-align: left">
                                         {!! Form::open(['class' => '_default', 'route' => 'inschrijven']) !!}
@@ -436,14 +436,16 @@
                                                 je in
                                             </button>
                                         </div>
-                                    </div> <!-- .section-content -->
+                                    </div> 
                                     {!! Form::close() !!}
                                 @else
+                                
+                                -->
                                     <div class="section-content">
-                                        <p>Alle workshops zitten vol, probeer het later nog eens misschien schrijft
-                                            iemand zich wel uit</p>
-                                    </div> <!-- .section-content -->
+                                        <p>Het is helaas te laat om je in te schrijven</p>
+                                    </div> <!-- 
                                 @endif
+                                -->
                             </div>
                         </div>
                     </div>
