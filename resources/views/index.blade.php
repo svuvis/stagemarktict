@@ -396,56 +396,10 @@
                                         CV
                                         mee.</p>
                                 </div>
-<!--
-                                @if(count($workshops) != 0)
-                                    <div class="section-content" style="text-align: left">
-                                        {!! Form::open(['class' => '_default', 'route' => 'inschrijven']) !!}
-                                        {!! Form::label('workshop','Workshop',['class' => 'control-label']) !!}
-                                        <div class="form-group required"
-                                             style="padding: 0; border-radius: 3px; -webkit-border-radius: 3px">
-                                            {!! Form::select('workshop', $workshops, null, ['class' => 'form-control', 'value' => old('workshop'), 'required' => '']) !!}
-                                            @if ($errors->has('workshop')) <p
-                                                    class="help-block"
-                                                    style="color: #a94442">{{ $errors->first('workshop') }}</p> @endif
-                                        </div>
-                                        {!! Form::label('name','Je naam',['class' => 'control-label']) !!}
-                                        <div class="form-group required">
-                                            {!! Form::text('name', null, ['class' => 'form-control', 'value' => old('name'), 'required' => '']) !!}
-                                            @if ($errors->has('name')) <p
-                                                    class="help-block"
-                                                    style="color: #a94442">{{ $errors->first('name') }}</p> @endif
-                                        </div>
-                                        {!! Form::label('email','Email adres',['class' => 'control-label']) !!}
-                                        <div class="form-group required">
-                                            {!! Form::email('email', null, ['class' => 'form-control', 'value' => old('email'), 'required' => '']) !!}
-                                            @if ($errors->has('email')) <p
-                                                    class="help-block"
-                                                    style="color: #a94442">{{ $errors->first('email') }}</p> @endif
-                                        </div>
-                                        {!! Form::label('studentnummer','Studentnummer',['class' => 'control-label']) !!}
-                                        <div class="form-group required">
-                                            {!! Form::number('studentnummer', null, ['class' => 'form-control', 'value' => old('studentnummer'), 'required' => '']) !!}
-                                            @if ($errors->has('studentnummer')) <p
-                                                    class="help-block"
-                                                    style="color: #a94442">{{ $errors->first('studentnummer') }}</p> @endif
-                                        </div>
-                                        <div class="btn-wrap">
-                                            <button type="submit"
-                                                    class="btn btn-warning m-y waves-effect waves-light btn-block">
-                                                Schrijf
-                                                je in
-                                            </button>
-                                        </div>
-                                    </div> 
-                                    {!! Form::close() !!}
-                                @else
-                                
-                                -->
+
                                     <div class="section-content">
                                         <p>Het is helaas te laat om je in te schrijven</p>
-                                    </div> <!-- 
-                                @endif
-                                -->
+                                    </div> 
                             </div>
                         </div>
                     </div>
